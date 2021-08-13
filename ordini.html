@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <script src="https://kit.fontawesome.com/446c3c81d8.js" crossorigin="anonymous"></script>
+    <title>Ordini ILibriDiBetta</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 text-center"><img src="images/imgLibro.jpg" height="100px" /></div>
+            <div class="col-9"><span class="title">Libreria OnLine "I Libri di Betta"</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <nav>
+                    <ul class="nav_items">
+                        <li><i class="fas fa-laptop-house"></i><a href="index.html">Home</a></li>
+                        <li><i class="fas fa-book"></i><a href="ordini.html"><mark>Ordina</mark></a></li>
+                        <li><i class="fas fa-envelope-open-text"></i><a href="newsletter.html">Newsletter</a></li>
+                        <li><i class="far fa-address-card"></i><a href="informazioni.html">Informazioni</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-9 text-center">
+                <h3>Il nostro Catalogo</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="5%">&nbsp;</th>
+                            <th>Genere</th>
+                            <th>Titolo</th>
+                            <th>Anno di uscita</th>
+                            <th>Autore</th>
+                            <th>Editore</th>
+                            <th>Prezzo</th>
+                            <th width="10%">Numero di copie da ordinare</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" value="22" name="item1" /></td>
+                            <td>Fantascienza</td>
+                            <td>Guida galattica per gli autostoppisti</td>
+                            <td>1979</td>
+                            <td>Douglas Adams</td>
+                            <td>Mondadori</td>
+                            <td>22 &euro;</td>
+                            <td><input type="number" name="item1Copie" id="item1Copie" min="0"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="18" name="item2" /></td>
+                            <td>Thriller</td>
+                            <td>Angeli e demoni</td>
+                            <td>2000</td>
+                            <td>Dan Brown</td>
+                            <td>Mondadori</td>
+                            <td>18 &euro;</td>
+                            <td><input type="number" name="item2Copie" id="item2Copie" min="0" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="12" name="item3" /></td>
+                            <td>Fantasy</td>
+                            <td>Harry Potter e la pietra filosofale</td>
+                            <td>1997</td>
+                            <td>J.K.Rowling</td>
+                            <td>Salani Editore</td>
+                            <td>12 &euro;</td>
+                            <td><input type="number" name="item3Copie" id="item3Copie" min="0" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="7" name="item4" /></td>
+                            <td>Romanzo storico</td>
+                            <td>Lo scudo di Talos</td>
+                            <td>1988</td>
+                            <td>Valerio Massimo Manfredi</td>
+                            <td>Mondadori</td>
+                            <td>7 &euro;</td>
+                            <td><input type="number" name="item4Copie" id="item4Copie" min="0" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="btn btn-warning" onclick="javascript:calcolaTotale()">Calcola Conto</div></td>
+                            <td colspan="2"><span id="totaleOrdine">-</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <footer>
+                    <span class="footer_text">&copy; 2021 - I Libri di Betta</span>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

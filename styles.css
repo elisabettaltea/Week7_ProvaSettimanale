@@ -1,0 +1,72 @@
+﻿body {
+    background-color: burlywood;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+}
+
+mark {
+    color: burlywood;
+    background-color: brown
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    top: 30px;
+    right: 35px;
+    font-size: 1.3em;
+}
+
+i {
+    color: darkgoldenrod;
+    margin-right: 3px;
+}
+
+ul.nav_items {
+    list-style-type: none;
+}
+
+ul.nav_items > li {
+    margin-top: 20px;
+}
+
+ul.nav_items > li > a {
+    padding: 3px 7px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 3px;
+}
+
+ul.nav_items > li > a:link {
+    color: darkgoldenrod;
+}
+
+ul.nav_items > li > a:visited {
+    color: darkgoldenrod;
+}
+
+ul.nav_items > li > a:hover {
+    background-color: darkgoldenrod;
+    color: burlywood;
+    cursor: grab;
+}
+
+.btnReservation {
+    border: 3px double red;
+    background-color: crimson;
+    color: white;
+    margin: 10px;
+}
+
+
+#totaleOrdine {
+    font-weight: bold;
+    color: brown;
+}
+
+
